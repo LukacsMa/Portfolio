@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="description" content="simon game">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8" lang="en">
+  <title>Simon Game</title>
+  <link rel="stylesheet" href="simongame.css">
+  <link rel="icon" href="simon.ico">
+</head>
+
+<body>
+  <div class="mainContainer">
+    <div class="textContainer">
+      <h1>Simon Game</h1>
+      <p>Gameplay. There are four colored buttons, each producing a particular tone and changing the opacity, when it is pressed or activated by the computer. A round in the game consists of the device activating one or more buttons in a random order, after which the player must reproduce that order by pressing the buttons. If the user succeeds, the series becomes progressively longer and more complex. Once the user fails the game is over.</p>
+    </div>
+
+    <div class="gameContainer">
+      <div class="container">
+        <div class="color blue" id="blue"> </div>
+        <div class="color green" id="green"> </div>
+        <div class="color red" id="red"></div>
+        <div class="color yellow" id="yellow"></div>
+      </div>
+      <div class="buttons">
+        <button id="gameButton" onclick="game()">Start</button>
+        <button id="resultButton" onclick="result()">Check</button>
+      </div>
+    </div>
+
+  </div>
+
+  <audio id="redAudio">
+    <source src="redAudio.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+  <audio id="greenAudio">
+    <source src="greenAudio.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+  <audio id="blueAudio">
+    <source src="blueAudio.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+  <audio id="yellowAudio">
+    <source src="yellowAudio.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+
+  <script src="simongame.js">
+  </script>
+</body>
+
+</html>

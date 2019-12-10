@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="description" content="caesar cipher">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8" lang="en">
+  <title>Caeser cipher</title>
+  <link rel="stylesheet" href="caesar.css">
+  <link rel="icon" href="caesar.png">
+</head>
+
+<body>
+  <div class="mainContainer">
+    <div class="container">
+      <h1>Caesar cipher</h1>
+      <blockquote cite="https://en.m.wikipedia.org/wiki/Caesar_cipher">In cryptography, a Caesar cipher, also known as Caesar's cipher, the shift cipher, Caesar's code or Caesar shift, is one of the simplest and most widely
+        known encryption techniques. It is a type of substitution cipher in which each letter in the plaintext is replaced by a letter some fixed number of positions down the alphabet. For example, with a left shift of 3, D would be replaced
+        by A, E would become B, and so on. The method is named after Julius Caesar, who used it in his private correspondence.</blockquote>
+
+      <figure><img src="caesar.jpg" alt="Mechanic Caesar cipher">
+        <figcaption>A construction of two rotating disks with a Caesar cipher can be used to encrypt or decrypt the code.</figcaption>
+      </figure>
+    </div>
+
+    <div class="container">
+      <h4>Write a sentence, which must contain only letters!</h4>
+      <div id="textToCiph" contenteditable></div>
+      <h4>Give a number, between 1 and 25!</h4>
+      <input id="ciphNumber" type="number" min="1" max="25">
+      <button onclick="ciphCaesar()">Caesar Cipher</button>
+      <h4>Ciphertext:</h4>
+      <h5 id="ciphedText"></h5>
+    </div>
+  </div>
+  <script src="caesar.js"></script>
+</body>
+
+</html>

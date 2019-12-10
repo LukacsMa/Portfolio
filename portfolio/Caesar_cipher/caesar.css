@@ -1,0 +1,55 @@
+body {
+  text-align: center;
+  font-family: sans-serif;
+  background-color: #ffc107;
+  color: #212121;
+}
+
+#textToCiph {
+  border: 1px solid;
+  text-align: left;
+  color: #757575;
+  background-color: #ffecb3;
+}
+
+img {
+  display: block;
+  margin: auto;
+  width: 50%;
+}
+
+figcaption {
+  font-size: 0.8em;
+  width: inherit;
+  display: block;
+  padding: 1em;
+  margin: auto;
+  width: 50%;
+  text-align: center;
+}
+
+#ciphedText {
+  border: 2px solid;
+  text-align: left;
+  color: #757575;
+  background-color: #ffecb3;
+}
+
+input {
+  background-color: #ffecb3;
+}
+
+button {
+  background-color: #ffa000;
+}
+
+blockquote {
+  line-height: 1.2;
+}
+
+@media only screen and (min-width:728px) {
+  .mainContainer {
+    display: grid;
+    grid-template-columns: 60% 40%;
+  }
+}

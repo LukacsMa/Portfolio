@@ -1,0 +1,91 @@
+body {
+  text-align: center;
+  color: #c5cae9;
+  background-color: #1a237e;
+  font-family: Verdana, sans-serif;
+}
+
+h1, p {
+  width: 80vw;
+  margin: 2vh auto 0;
+  line-height: 1.2;
+}
+
+.container {
+  margin: 4% auto;
+  width: 200px;
+  height: 200px;
+  border: 1px solid #c5cae9;
+  border-radius: 25%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+}
+
+.blue {
+  background-color: #29b6f6;
+  width: 70%;
+  height: 70%;
+  border-radius: 30%;
+  opacity: 0.8;
+}
+
+.green {
+  background-color: #277346;
+  width: 70%;
+  height: 70%;
+  border-radius: 30%;
+  opacity: 0.8;
+}
+
+.red {
+  background-color: #b71c1c;
+  width: 70%;
+  height: 70%;
+  border-radius: 30%;
+  opacity: 0.8;
+}
+
+.yellow {
+  background-color: #ead911;
+  width: 70%;
+  height: 70%;
+  border-radius: 30%;
+  opacity: 0.8;
+}
+
+.buttons {
+  margin-top: 10vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  margin: auto;
+  width: 200px;
+  height: 100px;
+}
+
+button {
+  width: 80%;
+  height: 80%;
+  border-radius: 50%;
+  background-color: #c5cae9;
+  color: #1a237e;
+  font-style: italic;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #5c6bc0;
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    height: 400px;
+    width: 400px;
+  }
+
+  h1, p {
+    width: 60vw;
+  }
+}
