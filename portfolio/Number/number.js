@@ -65,8 +65,10 @@ const emirpText = (num) => {
     num3 += num2[i];
   }
   let text = "";
-  if (emirp(num)) {
-    text = num + " and " + num3 + " are primes, " + num + " is emirp.";
+  if(num === Number(num3) && emirp(num)){
+     text = num + " is palindromic prime."
+  } else if (emirp(num)) {
+    text = num + " and " + num3 + " are primes, so " + num + " is emirp";
   } else {
     text = "not emirp";
   }
